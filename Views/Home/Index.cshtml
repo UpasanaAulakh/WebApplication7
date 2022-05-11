@@ -1,0 +1,23 @@
+﻿@model IEnumerable<WebApplication7.Models.student>
+<h2>Student Details</h2>
+<table class=" table table-border">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>age</th>
+        <th>subject</th>
+        <th>gender</th>
+       
+    </tr>
+    @foreach (var std in Model)
+    {
+        <tr>
+            <td>@std.id</td>
+            <td>@std.name</td>
+            <td>@std.age</td>
+            <td>@std.subject</td>
+            <td>@std.gender</td>
+            
+        </tr>
+    }
+</table>
